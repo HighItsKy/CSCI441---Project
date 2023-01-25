@@ -1,0 +1,29 @@
+/* For Mobile */
+
+@media only screen and (max-width: 1200px) {
+    .formwithscrolls {
+        overflow: auto;
+        height: auto;
+        max-height: auto;
+    }
+
+    formscrollbars {
+        overflow: hidden;
+        height: auto;
+        max-height: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .formwithscrolls {
+        overflow: auto;
+        height: 100vh;
+        min-height: 100vh;
+    }
+
+    .formscrollbars {
+        height: 85vh;
+        min-height: 85vh;
+        overflow: auto;
+    }
+}

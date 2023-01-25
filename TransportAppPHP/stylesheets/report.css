@@ -1,0 +1,109 @@
+
+/**
+ * Print stylesheet for yourwebsite.com
+* @version         1.0
+* @lastmodified    16.06.2016
+*/
+
+
+    
+    /* Set font to 16px/13pt, set background to white and font to black.*/
+    /* This saves ink */
+    body {
+        font: 10pt Georgia, "Times New Roman", Times, serif;
+        line-height: 1.1;
+        /*background: #fff;*/
+        color: #000000;
+    }
+
+   
+table {
+    width: 100%;
+}
+
+.pic-full {
+    height: auto; 
+    width: 100%;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 15.5% 15.5% 15.5% 15.5% 15.5% 15.5%;
+    grid-gap: 5px;
+}
+  
+.box {
+    border-radius: 1px;
+}
+
+.company_logo {
+
+   grid-column: span 3;
+}
+
+.billing{
+
+    grid-column: span 3;
+    text-align: center;
+   
+}
+
+.ship_to {
+
+    grid-column: span 2;
+}
+
+.ship_from {
+    grid-column: span 2;
+}
+
+.car_info {
+   grid-column: span 6;
+}
+
+.car_info table {
+    border: 2px solid #000000; 
+    border-spacing: 0px;
+}
+
+.car_info td, .car_info th {
+    border: 1px solid #A9A9A9;
+}
+
+.car_damage {
+
+    grid-column: span 2;
+    border: 1px solid #000000;
+
+}
+
+.disclaimer {
+    font: 8pt Georgia, "Times New Roman", Times, serif;
+    grid-column: span 6;
+    background-color: #A9A9A9;
+    text-align: justify;
+    padding: 10px;
+}
+
+.disclaimer_inspection {
+    grid-column: span 6;
+}
+
+.payment{
+    font: 8pt Georgia, "Times New Roman", Times, serif;
+    grid-column:  span 2;
+}
+
+.signature {
+    grid-column: span 6;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+    #header {display: none !important;}
+
+    .no-print {
+        display: none;
+    }
+  }

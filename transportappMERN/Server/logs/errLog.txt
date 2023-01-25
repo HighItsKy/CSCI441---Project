@@ -1,0 +1,14 @@
+20220102	19:47:01	2efd5d3f-e367-44f2-8e54-7ec2ca63affd	Error: Not allowed by CORS
+20220106	19:44:40	20c6bf7c-a566-4889-abde-16183df20751	Error: Not allowed by CORS
+20220106	20:06:30	3345c72a-1a53-45a4-8dec-238de92ef345	TypeError: TransportJobs is not a constructor
+20220106	20:42:10	5e7b18f4-3ac7-4551-8f66-1c2cbb1c9754	PayloadTooLargeError: request entity too large
+20220109	10:39:16	5c89058d-1525-4539-a9e7-4c6255a23887	URIError: Failed to decode param '/%PUBLIC_URL%/favicon.ico'
+20220109	10:39:16	cc5c577d-53d3-4bbd-9ad6-259e109ce562	URIError: Failed to decode param '/%PUBLIC_URL%/manifest.json'
+20220109	10:39:26	d8dd060f-9298-44c4-8a50-3cbba43c11c3	URIError: Failed to decode param '/%PUBLIC_URL%/manifest.json'
+20220109	14:48:02	513fa6f7-f53c-428c-b8f8-747a7406ed87	Error: Not allowed by CORS
+20220109	14:49:15	0b719bfb-6bac-4654-939c-7bdf00eae5e6	Error: Not allowed by CORS
+20220109	14:49:22	2708be1a-3c36-41dc-b854-1a1bc583187d	Error: Not allowed by CORS
+20220109	14:52:13	8e7d542b-03dc-4a9a-9385-785e35b84488	Error: Not allowed by CORS
+20220109	14:52:24	4a923b42-b0e4-47dd-9507-aa5a3667c01a	Error: Not allowed by CORS
+20220109	14:53:41	e51258e1-9d40-4fe6-994a-fbd598a1746f	Error: Not allowed by CORS
+20220109	14:58:24	d3a741fd-72dd-4664-a7f0-5ee46800b295	Error: Not allowed by CORS

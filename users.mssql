@@ -1,0 +1,73 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:3306
+-- Generation Time: Feb 09, 2023 at 10:52 PM
+-- Server version: 10.6.11-MariaDB
+-- PHP Version: 8.1.13
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `TransportProd`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `createdatetime` datetime NOT NULL DEFAULT current_timestamp(),
+  `FirstName` char(20) NOT NULL,
+  `LastName` char(20) NOT NULL,
+  `Enabled` tinyint(1) NOT NULL,
+  `admin` char(3) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `createdatetime`, `FirstName`, `LastName`, `Enabled`, `admin`) VALUES
+(1, 'classlogin', 'none@none.edu', '$2y$10$n96AelyMSd6m.pA3iHbNf.UicHy7PNHRRl/00.svVKoBR0/PBqpyW', '2021-08-12 02:34:58', 'Class', 'User', 1, 'yes'),
+(25, 'class', 'none@none.edu', '$2y$10$nY5fmnp1CFQAwY9NLRhHl.TCakVhSB/L5AiCxWth9kZnlsZGvxnVO', '2023-01-25 23:44:21', 'User', 'Class', 1, 'yes');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
